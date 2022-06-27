@@ -1,11 +1,139 @@
 version: '3'
 services:
-    prerender:
-        image: tvanro/prerender-alpine
+    caddy-lb:
+        image: caddy
         ports:
-        - 3000:3000
+            - "3000:3000"
+        volumes:
+            - $PWD/Caddyfile:/etc/caddy/Caddyfile
+        depends_on:
+            - prerender-1
+            - prerender-2
+            - prerender-3
+            - prerender-4
+            - prerender-5
+            - prerender-6
+            - prerender-7
+            - prerender-8
+            - prerender-9
+            - prerender-10
+
+    prerender-1:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
         environment:
-        - MEMORY_CACHE=0
-        - CACHE_MAXSIZE=1000
-        - CACHE_TTL=6000
-        restart: unless-stopped
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-2:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-3:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-4:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-5:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-6:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-7:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-8:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-9:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always
+
+    prerender-10:
+        image: tvanro/prerender-alpine
+        expose:
+            - 3000
+        environment:
+            - MEMORY_CACHE=0
+            - CACHE_MAXSIZE=1000
+            - CACHE_TTL=6000
+            - WAIT_AFTER_LAST_REQUEST=100
+            - PORT=3000
+        restart: always

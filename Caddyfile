@@ -1,0 +1,9 @@
+{
+        auto_https off
+}
+:3000 {
+        reverse_proxy {
+            to http://prerender-1:3000 http://prerender-2:3000 http://prerender-3:3000 http://prerender-4:3000 http://prerender-5:3000 http://prerender-6:3000 http://prerender-7:3000 http://prerender-8:3000 http://prerender-9:3000 http://prerender-10:3000
+            lb_policy least_conn
+        }
+}
