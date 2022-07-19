@@ -28,6 +28,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-2:
@@ -40,6 +41,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-3:
@@ -52,6 +54,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-4:
@@ -64,6 +67,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-5:
@@ -76,6 +80,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-6:
@@ -88,6 +93,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-7:
@@ -100,6 +106,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-8:
@@ -112,6 +119,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-9:
@@ -124,6 +132,7 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
 
     prerender-10:
@@ -136,4 +145,5 @@ services:
             - CACHE_TTL=6000
             - WAIT_AFTER_LAST_REQUEST=100
             - PORT=3000
+            - BLACKLISTED_DOMAINS=www.googletagmanager.com,www.google-analytics.com,static.cloudflareinsights.com
         restart: always
