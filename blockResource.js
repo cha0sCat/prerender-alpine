@@ -51,6 +51,7 @@ module.exports = {
             let shouldBlock = false;
             blockedResources.forEach((substring) => {
                 if (request.url.indexOf(substring) >= 0) {
+                    console.log(`Blocking ${request.url}`);
                     shouldBlock = true;
                 }
             });
