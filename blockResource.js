@@ -28,12 +28,9 @@ const blockedResources = [
     ".eot",
     ".otf",
     ".woff",
-    ".png",
     ".gif",
     ".tiff",
     ".pdf",
-    ".jpg",
-    ".jpeg",
     ".ico",
     ".svg"
 ];
