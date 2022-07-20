@@ -13,6 +13,7 @@ WORKDIR "/home/node"
 
 COPY ./package.json .
 COPY ./server.js .
+COPY ./blockResources.js .
 
 # install npm packages
 RUN npm install --no-package-lock

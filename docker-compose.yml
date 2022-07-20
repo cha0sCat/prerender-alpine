@@ -19,7 +19,7 @@ services:
             - prerender-10
 
     prerender-1:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -32,7 +32,7 @@ services:
         restart: always
 
     prerender-2:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -45,7 +45,7 @@ services:
         restart: always
 
     prerender-3:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -58,7 +58,7 @@ services:
         restart: always
 
     prerender-4:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -71,7 +71,7 @@ services:
         restart: always
 
     prerender-5:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -84,7 +84,7 @@ services:
         restart: always
 
     prerender-6:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -97,7 +97,7 @@ services:
         restart: always
 
     prerender-7:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -110,7 +110,7 @@ services:
         restart: always
 
     prerender-8:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -123,7 +123,7 @@ services:
         restart: always
 
     prerender-9:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
@@ -136,7 +136,7 @@ services:
         restart: always
 
     prerender-10:
-        image: tvanro/prerender-alpine
+        build: .
         expose:
             - 3000
         environment:
