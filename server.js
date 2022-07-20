@@ -17,6 +17,6 @@ if (memCache === 1) {
 server.use(prerender.blacklist());
 server.use(prerender.httpHeaders());
 server.use(prerender.removeScriptTags());
-server.use(require('blockResource'));
+server.use(require('./blockResource'));
 
 server.start();
