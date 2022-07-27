@@ -18,5 +18,6 @@ server.use(prerender.blacklist());
 server.use(prerender.httpHeaders());
 server.use(prerender.removeScriptTags());
 server.use(require('./blockResource'));
+server.use(require('./logUserAgent'));
 
 server.start();
