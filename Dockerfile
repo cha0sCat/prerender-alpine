@@ -14,6 +14,7 @@ WORKDIR "/home/node"
 COPY ./package.json .
 COPY ./server.js .
 COPY ./blockResource.js .
+COPY ./logUserAgent.js .
 
 # install npm packages
 RUN npm install --no-package-lock
