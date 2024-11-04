@@ -1,6 +1,7 @@
 version: '3'
 services:
     caddy-lb:
+        restart: always
         image: caddy
         ports:
             - "3000:3000"
